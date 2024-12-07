@@ -5,8 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Basics</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            position: fixed;
+            height: auto;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        body {
+            padding-top: 100px; /* Add space for fixed header */
+        }
+        ul li {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 0;
+        }
+        nav ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a>HTML</a></li>
+                <li><a>CSS</a></li>
+                <li><a>JS</a></li>
+                <li><a>logo</a></li>
+                <li><a>Guide</a></li>
+                <li><a>About us</a></li>
+            </ul>
+        </nav>
+    </header>
     <div>
         <h1>HTML Basics</h1>
     </div>

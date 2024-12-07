@@ -12,9 +12,45 @@
             padding: 8px;
         }
 
+        header {
+            position: fixed;
+            height: auto;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        body {
+            padding-top: 100px; /* Add space for fixed header */
+        }
+        ul li {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 0;
+        }
+        nav ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr;
+        }
     </style>
 </head>
 <body style="line-height: 1.8;">
+    <header>
+        <nav>
+            <ul>
+                <li><a>HTML</a></li>
+                <li><a>CSS</a></li>
+                <li><a>JS</a></li>
+                <li><a>logo</a></li>
+                <li><a>Guide</a></li>
+                <li><a>About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <h1>Javascript basics</h1>
     <p>JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc. This article helps you get started with JavaScript and furthers your understanding of what is possible.</p>
     <h1>What is JavaScript</h1>
