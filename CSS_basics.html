@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>CSS Properties Guide</title>
-    <style>
+    <!-- <style>
         header {
             position: fixed;
             height: auto;
@@ -26,18 +26,89 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr;
         }
+    </style> -->
+    <style>
+        /* Header styles */
+        header {
+            position: fixed;
+            height: 70px; /* Adjusted for better visibility */
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        /* Body padding for fixed header */
+        body {
+            padding-top: 100px; /* Adjust space for fixed header */
+        }
+
+        /* Reset for unordered list */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General styling for navigation links */
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        /* Style the navigation list items */
+        ul li {
+            display: inline-block;
+        }
+
+        /* Header navigation grid layout */
+        nav ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr; /* 2fr for the center (logo) */
+            align-items: center; /* Vertically center the items */
+            justify-items: center; /* Horizontally center the items */
+            height: 100%;
+        }
+
+        /* Styling for the logo */
+        nav .logo {
+            display: flex;
+            justify-content: center; /* Center the logo horizontally */
+            align-items: center; /* Center the logo vertically */
+        }
+
+        /* Logo image styling */
+        nav .logo img {
+            height: 50px;  /* Adjust height to fit better */
+            width: auto;   /* Maintain aspect ratio */
+        }
+
+        /* Optional: hover effect for the links */
+        nav a:hover {
+            background-color: #f0f0f0;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a>HTML</a></li>
-                <li><a>CSS</a></li>
-                <li><a>JS</a></li>
-                <li><a>logo</a></li>
-                <li><a>Guide</a></li>
-                <li><a>About us</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JS</a></li>
+
+                <!-- Logo positioned in the center -->
+                <li class="logo">
+                    <a href="#"><img src="logo.png" alt="Logo"></a>
+                </li>
+
+                <li><a href="#">Guide</a></li>
+                <li><a href="#">About us</a></li>
             </ul>
         </nav>
     </header>
