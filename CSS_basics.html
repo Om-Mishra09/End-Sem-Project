@@ -93,14 +93,15 @@ with display: inline-block they are.
 <br>
 Now, the difference between display: inline-block and display: block is
 that, with display: block, a line break happens after the element, so a
-block element doesn’t sit next to other elements
+block element doesn't sit next to other elements
     </p>
     <h2>Anchor Tag</h2>
-    <p>The <a> (anchor) element in HTML is used to create
+    <p>The &lt;a&gt; (anchor) element in HTML is used to create
         hyperlinks, allowing users to navigate between web pages
         or resources. By setting the href attribute, you can link to
         internal or external web pages, files, or email addresses
-        (e.g., <a href="https://example.com">Link</a>).
+        (e.g., &lt;a&gt; href="https://example.com">Link&lt;/a&gt;).
+    <br>
     <br>
     Tim Berners-Lee, the inventor of the World Wide Web,
 introduced the concept of hyperlinking in 1991, enabling
@@ -113,14 +114,14 @@ online.
 <p>In HTML, lists are used to group related items together, providing structure to
     content. There are three main types of lists:
     <ul>
-    <li>Ordered List (ol): Displays items in a numbered sequence, useful for step-by-step
+    <li>Ordered List (&lt;ol&gt;): Displays items in a numbered sequence, useful for step-by-step
     instructions.</li>
-    <li>Unordered List (ul): Displays items with bullet points, ideal for non-sequential
+    <li>Unordered List (&lt;ul&gt;): Displays items with bullet points, ideal for non-sequential
     lists.</li>
-    <li>Definition List (dl): Pairs terms and descriptions, useful for glossaries or key-value
+    <li>Definition List (&lt;dl&gt;): Pairs terms and descriptions, useful for glossaries or key-value
     structures.</li>
 </ul>
-    List items of (ol) & (ul) are defined with (li) element.
+    List items of (&lt;ol&gt;) & (&lt;ul&gt;) are defined with (&lt;li&gt;) element.
 </p>
 <h2>What are the drawbacks of inline styling?</h2>
 <ol>
@@ -157,11 +158,30 @@ selectors or pseudo-classes (e.g., a:hover).
     have only one ID</p>
 <h3>ID for Navigation</h3>
 <p>You can use an id to navigate to a specific part of a webpage, you can create an
-    anchor link (a) that points to the element with the corresponding id. When clicked,
+    anchor link (&lt;a&gt;) that points to the element with the corresponding id. When clicked,
     the page will scroll to the section with that id.</p>
 <h2>Comments</h2>
 <p>In HTML and CSS, comments are used to leave notes or explanations within the code,
     which are not displayed in the browser.
     They start with /* and end with */.</p>
+<h2>External CSS</h2>
+<p>Adding CSS Styles to each web page using inline or internal CSS would be too much
+    work, if our website has hundreds of pages.
+    Ex. Each blog in a blogging site follows the same pattern.
+In such a case, we use external style sheets, define styles there, and then, link those
+styles to each of our HTML files to put those styles on that respective web page.
+</p>
+<h2>How to link CSS file to HTML file?</h2>
+<p>To link a CSS file to an HTML file, you can use the <link> tag in the HTML file's head
+    section. The &lt;link&gt; tag is used to link external resources like CSS files to your HTML
+    document.
+    <br>
+    The &lt;link&gt; tag has two main attributes:
+    <ul>
+    <li>href: Specifies the path to the CSS file.</li>
+    <li>rel: Specifies the relationship between the HTML file and the linked resource.</li>
+</ul>
+</p>
+
 </body>
 </html>
