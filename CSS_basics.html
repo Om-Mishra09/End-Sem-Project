@@ -4,80 +4,164 @@
     <title>CSS Properties Guide</title>
 </head>
 <body>
-    <h1>CSS Properties and Their Usage</h1>
-
-    <h3>color</h3>
-    <p>Sets the color of text. Example: color: blue;</p>
-
-    <h3>background-color</h3>
-    <p>Sets the background color of an element. Example: background-color: #FF0000;</p>
-
-    <h3>font-size</h3>
-    <p>Sets the size of the font. Example: font-size: 16px;</p>
-
-    <h3>font-family</h3>
-    <p>Specifies the font for text. Example: font-family: Arial, sans-serif;</p>
-
-    <h3>margin</h3>
-    <p>Sets the margin around elements. Example: margin: 10px;</p>
-
-    <h3>padding</h3>
-    <p>Sets the padding inside elements. Example: padding: 15px;</p>
-
-    <h3>border</h3>
-    <p>Sets the border around elements. Example: border: 1px solid black;</p>
-
-    <h3>width</h3>
-    <p>Sets the width of an element. Example: width: 100px;</p>
-
-    <h3>height</h3>
-    <p>Sets the height of an element. Example: height: 200px;</p>
-
-    <h3>display</h3>
-    <p>Specifies how an element should be displayed. Example: display: flex;</p>
-
-    <h3>position</h3>
-    <p>Specifies the positioning method. Example: position: relative;</p>
-
-    <h3>text-align</h3>
-    <p>Sets the horizontal alignment of text. Example: text-align: center;</p>
-
-    <h3>text-decoration</h3>
-    <p>Sets or removes decorations from text. Example: text-decoration: underline;</p>
-
-    <h3>float</h3>
-    <p>Specifies how an element should float. Example: float: left;</p>
-
-    <h3>opacity</h3>
-    <p>Sets the opacity level of an element. Example: opacity: 0.5;</p>
-    <h3>flex-direction</h3>
-    <p>Sets the direction of flex items in a container. Example: flex-direction: row;</p>
-
-    <h3>justify-content</h3>
-    <p>Aligns flex items along the main axis. Example: justify-content: space-between;</p>
-
-    <h3>align-items</h3>
-    <p>Aligns flex items along the cross axis. Example: align-items: center;</p>
-
-    <h3>flex-wrap</h3>
-    <p>Specifies whether flex items should wrap. Example: flex-wrap: wrap;</p>
-
-    <h3>grid-template-columns</h3>
-    <p>Defines columns in a grid layout. Example: grid-template-columns: 1fr 1fr 1fr;</p>
-
-    <h3>grid-template-rows</h3>
-    <p>Defines rows in a grid layout. Example: grid-template-rows: 100px auto;</p>
-
-    <h3>gap</h3>
-    <p>Sets the gaps between grid/flex items. Example: gap: 20px;</p>
-
-    <h3>grid-column</h3>
-    <p>Specifies an item's column position in grid. Example: grid-column: 1 / 3;</p>
-
-    <h3>grid-row</h3>
-    <p>Specifies an item's row position in grid. Example: grid-row: 2 / 4;</p>
-
-    <h3>flex-grow</h3>
-    <p>Sets the growth factor of a flex item. Example: flex-grow: 1;</p>
+    <h1>CSS Properties Guide</h1>
+    <br>
+    <h2>What is CSS?</h2>
+    <p>CSS (Cascading Style Sheets) is used to
+        style and layout web pages by defining
+        how HTML elements should be displayed.
+        <br>
+        <p>It allows developers to control aspects like
+            colors, fonts, spacing, and responsiveness,
+            making websites more visually appealing
+            and user-friendly.</p>
+        <p>CSS can be applied inline, internally, or
+            externally via linked style sheets.</p>
+    </p>
+    <h2>Inline CSS</h2>
+    <h3>Style attribute</h3>
+    <p>Applying styles directly to an HTML element is known as inline styling.</p>
+    <p>It is useful for quick and specific changes, but is less flexible and harder to maintain.</p>
+    <h3>Applying Colors</h3>
+    <h4>Color Property</h4>
+    <P>The color property in CSS sets the text color of an element, allowing you to specify
+        values using color names, HEX, RGB, or HSL formats.</P>
+    <h4>Background-Color Property</h4>
+    <p>The background-color property in CSS sets the background color of an element.</p>
+    <h3>Formatting Text</h3>
+    <h4>Font-size Property</h4>
+    <p>The font-size property in CSS sets the size of the text, using units like pixels, em, rem,
+        or percentages.</p>
+    <h4>Font-weight & Font-style Properties</h4>
+    <p>The font-weight property sets text thickness, and font-style defines styles like normal
+        or italic.</p>
+    <h4>Font-family Property</h4>
+    <p>The font-family property specifies the typeface for text, allowing multiple fonts as
+        fallbacks.</p>
+    <h4>line-height Property</h4>
+    <p>The line-height property in CSS controls the vertical spacing between lines of text.</p>
+    <h2>div element</h2>
+    <p>The div element in HTML is a block-level container used to group content for styling
+        and layout purposes, allowing developers to apply CSS styles or JavaScript functions
+        to a set of elements collectively. We can use div to draw shapes.</p>
+    <h3>Changing dimensions</h3>
+    <h4>Width & Height Properties</h4>
+    <h4>Making space</h4>
+    <h4>Margin Property</h4>
+    <p>The margin property in CSS controls the space outside an element's border, allowing
+        you to create distance between elements. It can be set for all sides at once or
+        individually using margin-top, margin-right, margin-bottom, and margin-left.</p>
+    <h4>Padding Property</h4>
+    <p>The padding property in CSS controls the space between an element's content and its
+        border, allowing you to create internal spacing. Like margins, it can be set for all sides
+        or individually using padding-top, padding-right, padding-bottom, and padding-left.</p>
+    <h4>Border Property</h4>
+    <p>The border property in CSS sets an element's outline, defining its width, style, and
+        color, using shorthand like border: 2px solid black;</p>
+    <h4>Border-radius Property</h4>
+    <p>The border-radius property in CSS creates rounded corners for an element by
+        specifying the radius of the corners, allowing for values like pixels or percentages
+        (e.g., border-radius: 10px;).</p>
+    <h4>Margin vs Padding</h4>
+    <img src="margin_padding.png" alt="Margin VS Padding">
+    <h5>margin-border-padding-content</h5>
+    <img src="margin_border_padding_content.png" alt="Margin-Border-Padding-Content">
+    <h4>Shorthand values for properties</h4>
+    <p>Properties like margin, padding, border etc. can have multiple values corresponding
+        to each of the sides. These values can be specified in a single line in clockwise order
+        of top-right-bottom-left.</p>
+    <h5>Margin vs Padding</h5>
+    <img src="margin_padding_shorthand.png" alt="Margin vs Padding">
+    <h2>Span Element</h2>
+    <p>The <span> element in HTML is an inline container used to group text or other inline
+        elements for styling and manipulation.</p>
+    <h3>Display Property</h3>
+    <p>The display property in CSS defines how an element is displayed on the web page,
+        influencing its layout and behavior.
+        Common values include
+        <ul>
+        <li>Block (elements take up the full width),</li>
+        <li>Inline (elements take up only as much width as necessary),</li>
+        <li>Inline-block (combines properties of both block and inline), and</li>
+        <li>None (hides the element).</li>
+        </ul>
+        <br>
+        Compared to display: inline, the major difference is that inline-block
+allows to set a width and height on the element. Also, with display:
+inline, top and bottom margins & paddings are not respected, and
+with display: inline-block they are.
+<br>
+Now, the difference between display: inline-block and display: block is
+that, with display: block, a line break happens after the element, so a
+block element doesn’t sit next to other elements
+    </p>
+    <h2>Anchor Tag</h2>
+    <p>The <a> (anchor) element in HTML is used to create
+        hyperlinks, allowing users to navigate between web pages
+        or resources. By setting the href attribute, you can link to
+        internal or external web pages, files, or email addresses
+        (e.g., <a href="https://example.com">Link</a>).
+    <br>
+    Tim Berners-Lee, the inventor of the World Wide Web,
+introduced the concept of hyperlinking in 1991, enabling
+easy navigation across interconnected web pages, forming
+the foundation of modern web browsing. His work
+revolutionized how information is shared and accessed
+online.
+</p>
+<h2>List Tags</h2>
+<p>In HTML, lists are used to group related items together, providing structure to
+    content. There are three main types of lists:
+    <ul>
+    <li>Ordered List (ol): Displays items in a numbered sequence, useful for step-by-step
+    instructions.</li>
+    <li>Unordered List (ul): Displays items with bullet points, ideal for non-sequential
+    lists.</li>
+    <li>Definition List (dl): Pairs terms and descriptions, useful for glossaries or key-value
+    structures.</li>
+</ul>
+    List items of (ol) & (ul) are defined with (li) element.
+</p>
+<h2>What are the drawbacks of inline styling?</h2>
+<ol>
+    <li>Not reusable: You have to style each element separately, which is repetitive.</li>
+    <li>Mixes content and design: It combines HTML structure with styling, making it
+        harder to manage.</li>
+    <li>Hard to update: Changing styles across the page requires manual updates for
+        each element</li>
+    <li>Tough to override: Inline styles have high priority, making them harder to change
+        with other styles.</li>
+</ol>
+<h2>Embedded Styling</h2>
+<h3>Style Tag & CSS Syntax</h3>
+<p>The style tag in HTML is used to define embedded CSS directly within a webpage,
+    allowing styles to be applied to the document. Embedded styles are written inside the
+    style tag in the head tag and affect only the current page.</p>
+<h2>Selectors</h2>
+<h3>What are selectors?</h3>
+<p>Selectors in CSS are patterns used to target and apply styles to specific HTML
+    elements.
+<br>
+They can be simple, like targeting an element by its tag (p for paragraphs), class
+(.classname), or ID (#idname), or more complex using combinations like attribute
+selectors or pseudo-classes (e.g., a:hover).
+</p>
+<h3>Element Selector</h3>
+<p>An element selector in CSS targets all instances of a specific HTML tag.</p>
+<h3>Class Selector</h3>
+<p>A class selector in CSS targets elements with a specific class attribute. It is preceded
+    with a dot (.). Elements can have multiple classes.</p>
+<h3>ID Selector</h3>
+<p>An ID selector in CSS targets a single element with a specific id attribute. ID
+    selector is prefixed with a hash (#). ID can not be reused and one element can
+    have only one ID</p>
+<h3>ID for Navigation</h3>
+<p>You can use an id to navigate to a specific part of a webpage, you can create an
+    anchor link (a) that points to the element with the corresponding id. When clicked,
+    the page will scroll to the section with that id.</p>
+<h2>Comments</h2>
+<p>In HTML and CSS, comments are used to leave notes or explanations within the code,
+    which are not displayed in the browser.
+    They start with /* and end with */.</p>
 </body>
 </html>
